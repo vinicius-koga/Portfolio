@@ -1,3 +1,8 @@
 * {
     font-family: 'Rubik', sans-serif;
 }
+
+:root {
+    --var-blue: #4557dc;
+    --var-purple: #834fed;
+}
