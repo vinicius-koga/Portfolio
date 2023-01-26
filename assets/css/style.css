@@ -12,6 +12,9 @@
 /* HEADER - NAVBAR */
 header {
     box-shadow: 0px 3px 20px #ddd;
+    position: fixed;
+    width: 100%;
+    transition: all 0.3s ease;
 }
 
 .nav-item {
@@ -45,7 +48,7 @@ header {
 }
 
 .nav-link {
-    color: #444 !important;
+    color: #555 !important;
     font-size: 0.9rem;
     transition: all 0.2s ease;
 }
