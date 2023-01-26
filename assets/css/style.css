@@ -3,6 +3,10 @@
     font-weight: 500;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 :root {
     --var-blue: #4557dc;
     --var-purple: #834fed;
@@ -69,6 +73,33 @@ header .navbar-toggler-icon:hover {
 .banner-area {
     margin-top: 71px;
     height: calc(100vh - 71px);
+}
+
+.banner-area .banner-left {
+    position: relative;
+}
+
+.banner-area .banner-left span {
+    line-height: 3.5rem;
+    z-index: 1;
+}
+
+.banner-area .banner-left .banner-left-bg {
+    font-size: 10rem;
+    position: absolute;
+    color: #e5e5e5;
+    left: -50%;
+    line-height: 150px;
+    user-select: none;
+}
+
+.banner-area .banner-right {
+    position: relative;
+}
+
+.banner-area .banner-right .banner-right-image {
+    position: absolute;
+    right: 0;
 }
 
 /* MEDIA QUERY */
