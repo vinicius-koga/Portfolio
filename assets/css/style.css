@@ -85,21 +85,12 @@ header .navbar-toggler-icon:hover {
 }
 
 .banner-area .banner-left .banner-left-bg {
-    font-size: 10rem;
+    font-size: clamp(10rem, 20vw, 15rem);
     position: absolute;
     color: #e5e5e5;
     left: -50%;
     line-height: 150px;
     user-select: none;
-}
-
-.banner-area .banner-right {
-    position: relative;
-}
-
-.banner-area .banner-right .banner-right-image {
-    position: absolute;
-    right: 0;
 }
 
 /* MEDIA QUERY */
