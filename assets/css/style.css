@@ -1,8 +1,51 @@
 * {
     font-family: 'Rubik', sans-serif;
+    font-weight: 500;
 }
 
 :root {
     --var-blue: #4557dc;
     --var-purple: #834fed;
+}
+
+
+/* HEADER / NAVBAR */
+.nav-item {
+    margin: 0px 25px 0px 25px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-item::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: var(--var-blue);
+    display: block;
+    transition: all 0.2s ease;
+    transform: scaleX(0);
+}
+
+.nav-item:hover::after {
+    transform: scaleX(-1);
+}
+
+.nav-item.active::after {
+    transform: scaleX(-1);
+}
+
+.nav-link.active {
+    color: var(--var-blue) !important;
+}
+
+.nav-link {
+    color: #000 !important;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--var-blue) !important;
 }
