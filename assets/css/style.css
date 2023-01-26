@@ -14,7 +14,7 @@ header {
     box-shadow: 0px 3px 20px #ddd;
     position: fixed;
     width: 100%;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }
 
 .nav-item {
@@ -68,6 +68,8 @@ header .navbar-toggler-icon:hover {
 section {
     height: 200vh;
 }
+
+/* SECTION BANNER */
 
 
 /* MEDIA QUERY */
