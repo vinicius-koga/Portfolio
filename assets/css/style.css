@@ -65,12 +65,11 @@ header .navbar-toggler-icon:hover {
     transform: scale(1.1);
 }
 
-section {
-    height: 200vh;
-}
-
 /* SECTION BANNER */
-
+.banner-area {
+    margin-top: 71px;
+    height: calc(100vh - 71px);
+}
 
 /* MEDIA QUERY */
 @media (max-width: 767px) {
