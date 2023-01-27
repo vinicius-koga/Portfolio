@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header style="top: 0px;">
+    <header style="top: 0px;" class="border-bottom">
       <nav class="navbar navbar-expand-md bg-light">
         <div class="container">
           <!-- LOGO -->
@@ -43,9 +43,12 @@
         </div>
       </nav>
     </header>
-    <section class="banner-area">
+
+    <!-- SECTION BANNER -->
+    <section class="banner-area pt-4">
       <div class="container h-100">
         <div class="row row-cols-1 row-cols-lg-2 h-100">
+          <!-- BANNER-LEFT -->
           <div class="col h-100 pe-0">
             <div class="banner-left d-flex flex-column justify-content-center h-100">
               <span class="banner-left-bg">KOGA</span>
@@ -54,14 +57,17 @@
               <span style="font-size: 1.3rem;">DESENVOLVEDOR FRONT-END</span>
             </div>
           </div>
-          <div class="col h-100 ps-0 d-none d-lg-block">
+          <!-- BANNER-RIGHT -->
+          <div class="col h-100 ps-0 d-none d-lg-block" style="overflow-y: hidden;">
             <div class="banner-right h-100">
-              <!-- <img src="assets/imgs/banner-bg.png" alt="Banner Illustration" class="banner-right-image"> -->
+              <img src="assets/imgs/banner-bg.png" alt="Home Page Background" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section style="height: 200vh;"></section>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
