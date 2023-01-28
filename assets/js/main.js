@@ -21,5 +21,17 @@ document.addEventListener('scroll', () => {
     };
 });
 
-//TYPING TEXT FN
 
+//TYPING ANIMATION FN
+function typeTextAnimation(el) {
+    const textArr = el.innerHTML.split('');
+    el.innerHTML = '&nbsp;';
+    textArr.forEach((letter, index) => {
+        setTimeout(() => {
+            el.innerHTML += letter;
+        }, 100 * index);
+    })
+}
+
+const insertText = document.querySelector('.typeTextAnimation');
+typeTextAnimation(insertText);

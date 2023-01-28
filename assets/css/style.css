@@ -16,7 +16,7 @@ html {
 /* HEADER - NAVBAR */
 header {
     width: 100%;
-    z-index: 2;
+    z-index: 10;
 }
 
 .nav-item {
@@ -131,7 +131,7 @@ header .navbar-toggler-icon:hover {
 }
 
 .banner-area .banner-left .banner-left-bg {
-    font-size: 200px;
+    font-size: clamp(200px, 200vh, 280px);
     position: absolute;
     color: #e5e5e5;
     left: -20%;
@@ -143,6 +143,26 @@ header .navbar-toggler-icon:hover {
     width: 65%;
     height: 2px;
     background-color: #000;
+}
+
+#bannerTypingAnimation {
+    border-right: 2px solid rgba(0, 0, 0, 1);
+}
+
+
+/* SECTION BANNER ANIMATIONS */
+.typeTextAnimation {
+    animation: typeTextAnimation 0.8s infinite;
+}
+
+@keyframes typeTextAnimation {
+    from {
+        border-right: 2px solid rgba(0, 0, 0, 1);
+    }
+
+    to {
+        border-right: 2px solid rgba(0, 0, 0, 0);
+    }
 }
 
 
