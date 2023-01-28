@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/imgs/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title></title>
 </head>
 <body>
     <!-- HEADER -->
-    <header class="border-bottom" style="position: absolute;">
+    <header class="border-bottom" style="position: absolute;"> <!-- REMOVE "DISPLAY: NONE" -->
       <nav class="navbar navbar-expand-md bg-light">
         <div class="container">
           <!-- LOGO -->
@@ -30,7 +31,7 @@
                 <a class="nav-link active pt-3 pb-0 pt-lg-0 px-0 text-uppercase" aria-current="page" href="#inicio">INÍCIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link pt-3 pb-0 pt-lg-0 px-0 text-uppercase" href="#">SOBRE MIM</a>
+                <a class="nav-link pt-3 pb-0 pt-lg-0 px-0 text-uppercase" href="#sobre-mim">SOBRE MIM</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link pt-3 pb-0 pt-lg-0 px-0 text-uppercase" href="#">CONHECIMENTOS</a>
@@ -80,7 +81,33 @@
       </div>
     </section>
 
-    <section style="height: 200vh; background-color: #ccc;"></section>
+    <!-- SECTION ABOUT-ME -->
+    <section class="about-me-area" id="sobre-mim">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col d-flex align-items-center justify-content-center">
+            <!-- CONTAINER -->
+            <div class="about-me-container p-4 p-sm-5 rounded border">
+              <div class="row h-100">
+                <!-- LEFT-SIDE -->
+                <div class="col-12 col-md-4 d-none d-md-block">
+                  <img src="assets/imgs/profile-pic.png" alt="Profile Picture" class="img-fluid">
+                </div>
+                <!-- RIGHT-SIDE -->
+                <div class="col-12 col-md-8 about-me-right">
+                  <span style="font-weight: 300;" class="about-me-greeting">Olá! me chamo</span> <br>
+                  <p class="mb-4" style="font-weight: 400; font-size: 2rem; color: var(--var-blue);">Vinícius Koga</p>
+                  <p class="mb-4" style="font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias repellendus rerum tempora nihil? Sint adipisci excepturi, blanditiis sequi architecto cum et iure earum culpa, quis doloremque consectetur eligendi modi enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sed accusantium sequi alias amet, distinctio temporibus totam maiores saepe enim doloremque minima ipsam natus illo perspiciatis dignissimos accusamus. Iste, autem.</p>
+                  <a href="mailto:viniciuskoga_m@hotmail.com" target="_blank"><i class="bi bi-envelope-at" style="color: #016bbb;"></i></a> 
+                  <a href="https://github.com/vinicius-koga" target="_blank"><i class="bi bi-github" style="color: #e44d30;"></i></a> 
+                  <a href="#" target="_blank"><i class="bi bi-linkedin" style="color: #2663a9;"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>

@@ -5,6 +5,7 @@
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -214,6 +215,26 @@ header .navbar-toggler-icon:hover {
     to {
         border-right: 2px solid rgba(0, 0, 0, 0);
     }
+}
+
+
+/* SECTION ABOUT ME */
+section.about-me-area {
+    height: 100vh;
+}
+
+.about-me-container {
+    background-color: white;
+}
+
+.about-me-right i {
+    font-size: 30px;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.about-me-right i:hover {
+    font-size: 33px;
 }
 
 
