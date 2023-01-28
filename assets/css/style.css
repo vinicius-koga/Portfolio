@@ -67,6 +67,7 @@ header .navbar-toggler-icon:hover {
     transform: scale(1.1);
 }
 
+
 /* HEADER ANIMATIONS */
 .showHeaderAnimation {
     animation: showHeader 0.8s ease;
@@ -114,6 +115,7 @@ header .navbar-toggler-icon:hover {
     }
 }
 
+
 /* SECTION BANNER */
 .banner-area {
     height: 100vh;
@@ -129,12 +131,18 @@ header .navbar-toggler-icon:hover {
 }
 
 .banner-area .banner-left .banner-left-bg {
-    font-size: clamp(10rem, 20vw, 15rem);
+    font-size: 200px;
     position: absolute;
     color: #e5e5e5;
-    left: -50%;
+    left: -20%;
     line-height: 150px;
     user-select: none;
+}
+
+.banner-left-line {
+    width: 65%;
+    height: 2px;
+    background-color: #000;
 }
 
 
@@ -151,5 +159,12 @@ header .navbar-toggler-icon:hover {
 
     .nav-item.active::after {
         transform: scaleX(1);
+    }
+}
+
+@media (max-width: 575px) {
+    .banner-area .banner-left .banner-left-bg {
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
