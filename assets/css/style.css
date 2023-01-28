@@ -149,6 +149,41 @@ header .navbar-toggler-icon:hover {
     border-right: 2px solid rgba(0, 0, 0, 1);
 }
 
+.banner-area .linkedinBtn {
+    background-image: linear-gradient(to right, var(--var-blue), var(--var-purple));
+    color: #fff;
+    padding-top: calc(0.7rem + 1px);
+    padding-bottom: calc(0.7rem + 1px);
+    padding-left: calc(1.5rem + 1px);
+    padding-right: calc(1.5rem + 1px);
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.banner-area .linkedinBtn:hover {
+    padding: 0.7rem 1.5rem;
+    border: 2px solid var(--var-purple);
+    background-image: none;
+    color: #000;
+}
+
+.banner-area .githubBtn {
+    border: 2px solid var(--var-purple);
+    color: #000;
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.banner-area .githubBtn:hover {
+    background-image: linear-gradient(to right, var(--var-blue), var(--var-purple));
+    padding-top: calc(0.7rem + 2px);
+    padding-bottom: calc(0.7rem + 2px);
+    padding-left: calc(1.5rem + 2px);
+    padding-right: calc(1.5rem + 2px);
+    color: #fff;
+    border: 0;
+}
 
 /* SECTION BANNER ANIMATIONS */
 .typeTextAnimation {
