@@ -239,6 +239,16 @@ section.about-me-area {
 
 
 /* MEDIA QUERY */
+@media(max-width: 991px) {
+    .banner-area {
+        height: 75vh;
+    }
+
+    section.about-me-area {
+        height: 60vh;
+    }
+}
+
 @media (max-width: 767px) {
     .nav-item::after {
         transform-origin: left;
@@ -251,13 +261,5 @@ section.about-me-area {
 
     .nav-item.active::after {
         transform: scaleX(1);
-    }
-
-    .banner-area {
-        height: 75vh;
-    }
-
-    section.about-me-area {
-        height: 60vh;
     }
 }
