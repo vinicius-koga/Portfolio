@@ -222,7 +222,7 @@ header .navbar-toggler-icon:hover {
 
 /* SECTION ABOUT ME */
 section.about-me-area {
-    height: 100vh;
+    height: auto;
 }
 
 .about-me-container {
@@ -272,10 +272,6 @@ section.about-me-area {
 @media(max-width: 991px) {
     .banner-area {
         height: 75vh;
-    }
-
-    section.about-me-area {
-        height: auto;
     }
 }
 
