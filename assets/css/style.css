@@ -232,9 +232,3 @@ header .navbar-toggler-icon:hover {
         transform: scaleX(1);
     }
 }
-
-@media (max-width: 575px) {
-    .banner-area {
-        height: 70vh;
-    }
-}
