@@ -1,14 +1,23 @@
-//SHOW HEADER ON SCROLL-UP FN
-let lastScrollTop = 0;
-let header = document.querySelector('header');
-window.addEventListener('scroll', () => {
-    let scrollTop = window.pageYOffset
-    if (scrollTop > lastScrollTop) {
-        header.style.top = '-71px';
-        header.style.opacity = '0'
-    } else {
-        header.style.top = '0px';
-        header.style.opacity = '1'
-    }
-    lastScrollTop = scrollTop;
+//SHOW HEADER ON SCROLL FN
+const header = document.querySelector('header');
+const secBanner = document.querySelector('.banner-area');
+document.addEventListener('scroll', () => {
+    let scrollOffset = window.pageYOffset;
+    console.log(scrollOffset);
+    if (scrollOffset > 500) {
+        header.style.position = 'fixed';
+        header.classList.remove('hiddeHeaderAnimation');
+        header.classList.remove('showHeaderTopAnimation');
+        header.classList.add('showHeaderAnimation');
+    };
+    if (scrollOffset < 500 && header.classList.contains('showHeaderAnimation')) {
+        header.classList.remove('showHeaderAnimation');
+        header.classList.add('hiddeHeaderAnimation');
+        setTimeout(() => {
+            header.style.position = 'absolute';
+            header.classList.remove('hiddeHeaderAnimation');
+            header.classList.add('showHeaderTopAnimation');
+        }, 300);
+    };
 });
+

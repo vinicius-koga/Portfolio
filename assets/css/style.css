@@ -15,9 +15,7 @@ html {
 
 /* HEADER - NAVBAR */
 header {
-    position: fixed;
     width: 100%;
-    transition: all 0.4s ease;
     z-index: 2;
 }
 
@@ -69,10 +67,56 @@ header .navbar-toggler-icon:hover {
     transform: scale(1.1);
 }
 
+/* HEADER ANIMATIONS */
+.showHeaderAnimation {
+    animation: showHeader 0.8s ease;
+}
+
+.hiddeHeaderAnimation {
+    animation: hiddeHeader 0.8s ease;
+}
+
+.showHeaderTopAnimation {
+    animation: showHeaderTop 0.8s ease;
+}
+
+@keyframes showHeader {
+    from {
+        top: -71px;
+        opacity: 0
+    }
+
+    to {
+        top: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes hiddeHeader {
+    from {
+        top: 0px;
+        opacity: 1;
+    }
+
+    to {
+        top: -71px;
+        opacity: 0;
+    }
+}
+
+@keyframes showHeaderTop {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 /* SECTION BANNER */
 .banner-area {
-    margin-top: 71px;
-    height: 60vh;
+    height: 100vh;
 }
 
 .banner-area .banner-left {

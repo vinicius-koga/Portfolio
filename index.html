@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header style="top: 0px;" class="border-bottom">
+    <header class="border-bottom" style="position: absolute;">
       <nav class="navbar navbar-expand-md bg-light">
         <div class="container">
           <!-- LOGO -->
@@ -27,7 +27,7 @@
           <div class="collapse navbar-collapse py-3" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item active">
-                <a class="nav-link active pt-3 pb-0 pt-lg-0 px-0" aria-current="page" href="#">INÍCIO</a>
+                <a class="nav-link active pt-3 pb-0 pt-lg-0 px-0" aria-current="page" href="#homepage">INÍCIO</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link pt-3 pb-0 pt-lg-0 px-0" href="#">SOBRE</a>
@@ -45,7 +45,7 @@
     </header>
 
     <!-- SECTION BANNER -->
-    <section class="banner-area pt-4">
+    <section class="banner-area" id="homepage">
       <div class="container h-100">
         <div class="row row-cols-1 row-cols-lg-2 h-100">
           <!-- BANNER-LEFT -->
@@ -59,7 +59,7 @@
           </div>
           <!-- BANNER-RIGHT -->
           <div class="col h-100 ps-0 d-none d-lg-block" style="overflow-y: hidden;">
-            <div class="banner-right h-100">
+            <div class="banner-right h-100 d-flex align-items-center pt-5">
               <img src="assets/imgs/banner-bg.png" alt="Home Page Background" class="img-fluid">
             </div>
           </div>
@@ -67,7 +67,7 @@
       </div>
     </section>
 
-    <section style="height: 200vh;"></section>
+    <section style="height: 200vh; background-color: grey;"></section>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
