@@ -252,4 +252,12 @@ section.about-me-area {
     .nav-item.active::after {
         transform: scaleX(1);
     }
+
+    .banner-area {
+        height: 75vh;
+    }
+
+    .about-me-area {
+        height: 60vh;
+    }
 }
