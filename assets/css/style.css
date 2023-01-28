@@ -135,7 +135,7 @@ header .navbar-toggler-icon:hover {
 
 /* SECTION BANNER */
 .banner-area {
-    height: 100vh;
+    height: 101vh;
 }
 
 .banner-area .banner-left {
@@ -220,7 +220,7 @@ header .navbar-toggler-icon:hover {
 
 /* SECTION ABOUT ME */
 section.about-me-area {
-    height: 100vh;
+    height: 101vh;
 }
 
 .about-me-container {
