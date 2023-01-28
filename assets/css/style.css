@@ -293,3 +293,9 @@ section.about-me-area {
         transform: scaleX(1);
     }
 }
+
+@media (max-width: 355px) {
+    .mobile-greeting .mg-left {
+        display: none;
+    }
+}
