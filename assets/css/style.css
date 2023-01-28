@@ -238,6 +238,12 @@ section.about-me-area {
 }
 
 
+/* SECTION MY-KNOWLEDGE */
+.my-knowledge-area {
+    height: 100vh;
+}
+
+
 /* MEDIA QUERY */
 @media(max-width: 991px) {
     .banner-area {
