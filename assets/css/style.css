@@ -152,7 +152,7 @@ header .navbar-toggler-icon:hover {
 .banner-area .banner-left .banner-left-bg {
     font-size: clamp(200px, 200vh, 280px);
     position: absolute;
-    color: #eeeeee;
+    color: #e5e5e5;
     left: -20%;
     line-height: 150px;
     user-select: none;
