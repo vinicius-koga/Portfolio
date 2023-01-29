@@ -35,25 +35,3 @@ function typeTextAnimation(el) {
 
 const insertText = document.querySelector('.typeTextAnimation');
 typeTextAnimation(insertText);
-
-
-//CHANGE SECTION ON SCROLL FN
-const observer0 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            document.querySelectorAll('.navList .active').forEach(i => i.classList.remove('active'));
-            document.querySelectorAll('.navList .inicio').forEach(i => i.classList.add('active'));
-        }
-    })
-})
-observer0.observe(document.querySelector('.inicio-intersection'));
-
-const observer1 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            document.querySelectorAll('.navList .active').forEach(i => i.classList.remove('active'));
-            document.querySelectorAll('.navList .sobre-mim').forEach(i => i.classList.add('active'));
-        }
-    })
-})
-observer1.observe(document.querySelector('.sobre-mim-intersection'));

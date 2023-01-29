@@ -241,7 +241,6 @@ section.about-me-area {
 
 
 /* SECTION MY-KNOWLEDGE */
-
 .lang-container img {
     min-width: 30px;
     max-width: 80px;
@@ -265,6 +264,39 @@ section.about-me-area {
     width: 60%;
     height: 2px;
     background-color: #000;
+}
+
+
+/* SECTION PROJECTS */
+.project-area .cardButton {
+    background-image: linear-gradient(to right, var(--var-blue), var(--var-purple));
+    color: #fff;
+    padding-top: calc(0.5rem + 2px);
+    padding-bottom: calc(0.5rem + 2px);
+    padding-left: calc(1.3rem + 2px);
+    padding-right: calc(1.3rem + 2px);
+    font-size: 0.9em;
+    font-weight: 400;
+    border: 0;
+}
+
+.project-area .cardButton:hover {
+    padding: 0.5rem 1.3rem;
+    border: 2px solid var(--var-purple);
+    background-image: none;
+    color: var(--var-purple);
+}
+
+.project-area .card-img-top {
+    transition: all 0.2s ease;
+}
+
+.project-area .card-img-top:hover {
+    transform: scale(1.05);
+}
+
+.project-area .cardLangIcon:hover~.card-img-top {
+    transform: scale(1.05);
 }
 
 
