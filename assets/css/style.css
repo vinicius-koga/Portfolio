@@ -308,6 +308,28 @@ section.about-me-area {
 }
 
 
+/* FOOTER */
+footer .footer-links a {
+    font-weight: 300;
+    text-decoration: none;
+    color: #555;
+    padding-right: 15px;
+}
+
+footer .footer-contentLeft a:hover {
+    text-decoration: underline;
+    color: var(--var-blue);
+}
+
+footer .bi-links i {
+    color: #777;
+}
+
+footer .bi-links i:hover {
+    color: var(--var-blue);
+}
+
+
 /* MEDIA QUERY */
 @media(max-width: 991px) {
     .banner-area {
