@@ -316,6 +316,14 @@ footer .footer-links a {
     padding-right: 15px;
 }
 
+.footer-logo {
+    transition: all 0.2s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.05);
+}
+
 footer .footer-contentLeft a:hover {
     text-decoration: underline;
     color: var(--var-blue);
