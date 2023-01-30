@@ -299,6 +299,14 @@ section.about-me-area {
     transform: scale(1.05);
 }
 
+.projects-link {
+    text-decoration: none;
+}
+
+.projects-link:hover {
+    text-decoration: underline;
+}
+
 
 /* MEDIA QUERY */
 @media(max-width: 991px) {
