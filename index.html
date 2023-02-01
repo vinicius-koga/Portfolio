@@ -31,13 +31,13 @@
                 <a class="nav-link inicio active pt-3 pb-0 pt-lg-0 px-0 text-uppercase" aria-current="page" href="#inicio">INÍCIO</a>
               </li>
               <li class="nav-item sobre-mim">
-                <a class="nav-link sobre-mim pt-3 pb-0 pt-lg-0 px-0 text-uppercase" href="#">SOBRE MIM</a>
+                <a class="nav-link sobre-mim pt-3 pb-0 pt-lg-0 px-0 text-uppercase" style="cursor: pointer;" onclick="scrollToAboutMe()">SOBRE MIM</a>
               </li>
-              <li class="nav-item conhecimentos">
-                <a class="nav-link conhecimentos pt-3 pb-0 pt-lg-0 px-0 text-uppercase" href="#">CONHECIMENTOS</a>
+              <li class="nav-item sobre-mim">
+                <a class="nav-link sobre-mim pt-3 pb-0 pt-lg-0 px-0 text-uppercase" style="cursor: pointer;" onclick="scrollToProjects()">PROJETOS</a>
               </li>
               <li class="nav-item projetos">
-                <a class="nav-link projetos pt-3 pb-0 pt-lg-0 px-0 text-uppercase" href="#">PROJETOS</a>
+                <a class="nav-link projetos pt-3 pb-0 pt-lg-0 px-0 text-uppercase" href="#">CURRÍCULO<i class="bi bi-box-arrow-up-right ms-1"></i></a>
               </li>
             </ul>
           </div>
@@ -50,7 +50,7 @@
       <div class="container h-100">
         <div class="row row-cols-1 row-cols-lg-2 h-100">
           <!-- BANNER-LEFT -->
-          <div class="col h-100 pe-0" style="overflow-x: hidden;">
+          <div class="col h-100 pe-0 animated0" style="overflow-x: hidden;">
             <div class="banner-left d-flex flex-column justify-content-center h-100">
               <span class="banner-left-bg text-uppercase">KOGA</span>
               <div class="row" style="z-index: 2;">
@@ -59,11 +59,11 @@
               </div>
               <span style="font-size: 4rem;" class="text-uppercase">VINICIUS KOGA</span>
               <div class="row " style="z-index: 2;">
-                <span class="col col-auto my-3 pe-1 typeTextAnimation text-uppercase" style="font-size: 1.3rem; line-height: 1.3rem;">DESENVOLVEDOR FRONT-END</span>
+                <span class="col col-auto my-3 pe-1 typeTextAnimation text-uppercase" style="font-size: 1.3rem; line-height: 1.3rem;">&nbsp;</span>
               </div>
               <div class="row pt-3" style="z-index: 2;">
                 <div class="col col-auto">
-                  <a href="#" target="_blank" title="Veja meu perfil no LinkedIn"><button class="btn linkedinBtn text-uppercase">LINKEDIN</button></a>
+                  <a href="https://www.linkedin.com/in/vin%C3%ADcius-koga-marasco-622447245/" target="_blank" title="Veja meu perfil no LinkedIn"><button class="btn linkedinBtn text-uppercase">LINKEDIN</button></a>
                 </div>
                 <div class="col col-auto ps-0">
                   <a href="https://github.com/vinicius-koga" target="_blank" title="Veja meu perfil no Github"><button class="btn githubBtn text-uppercase">GITHUB</button></a>
@@ -104,10 +104,11 @@
                       <p class="mb-4" style="font-weight: 400; font-size: 2rem; color: var(--var-blue);">Vinícius Koga</p>
                     </div>
                   </div>
-                  <p class="mb-4" style="font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias repellendus rerum tempora nihil? Sint adipisci excepturi, blanditiis sequi architecto cum et iure earum culpa, quis doloremque consectetur eligendi modi enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sed accusantium sequi alias amet, distinctio temporibus totam maiores saepe enim doloremque minima ipsam natus illo perspiciatis dignissimos accusamus. Iste, autem.</p>
-                  <a href="mailto:viniciuskoga_m@hotmail.com" target="_blank"><i class="bi bi-envelope-at" style="color: #016bbb;"></i></a> 
+                  <p class="mb-4" style="font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias repellendus rerum tempora nihil? Sint adipisci excepturi, blanditiis sequi architecto cum et iure earum culpa, quis doloremque consectetur eligendi modi enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sed accusantium sequi alias amet, distinctio temporibus totam maiores saepe enim doloremque minima ipsam natus illo perspiciatis dignissimos accusamus. Iste, autem.</p>                 
+                  <a href="https://www.linkedin.com/in/vin%C3%ADcius-koga-marasco-622447245/" target="_blank"><i class="bi bi-linkedin" style="color: #2663a9;"></i></a>
                   <a href="https://github.com/vinicius-koga" target="_blank"><i class="bi bi-github" style="color: #e44d30;"></i></a> 
-                  <a href="#" target="_blank"><i class="bi bi-linkedin" style="color: #2663a9;"></i></a>
+                  <a href="mailto:viniciuskoga_m@hotmail.com" target="_blank"><i class="bi bi-envelope-at" style="color: #016bbb;"></i></a> 
+                  <a href="https://wa.me/5511949686508" target="_blank"><i class="bi bi-whatsapp" style="color: #3fcf58;"></i></a>
                 </div>
               </div>
             </div>
@@ -117,7 +118,7 @@
     </section>
 
     <!-- SECTION MY-KNOWLEDGE -->
-    <section class="my-knowledge-area my-4 " id="conhecimentos">
+    <section class="my-knowledge-area my-4 animated1" id="conhecimentos">
       <div class="container py-5">
         <div class="row">
           <div class="col-12 col-lg-5 text-center text-lg-start">
@@ -151,7 +152,7 @@
     </section>
 
     <!-- SECTION PROJECTS -->
-    <section class="project-area" id="projetos">
+    <section class="project-area animated2" id="projetos">
       <div class="container">
         <div class="row">
           <div class="col text-center">
@@ -304,12 +305,12 @@
           </div>
           <div class="col-12 col-md mt-3 mt-md-0 text-center text-md-end" style="font-weight: 300; color: #555;">
             <div class="d-flex justify-content-center justify-content-md-end bi-links mb-2">
-              <a href="#" target="_blank"><i class="bi bi-linkedin ps-3" style="font-size: 23px;"></i></a>
+              <a href="https://www.linkedin.com/in/vin%C3%ADcius-koga-marasco-622447245/" target="_blank"><i class="bi bi-linkedin ps-3" style="font-size: 23px;"></i></a>
               <a href="https://github.com/vinicius-koga" target="_blank"><i class="bi bi-github ps-3" style="font-size: 23px;"></i></a>
               <a href="mailto:viniciuskoga_m@hotmail.com" target="_blank"><i class="bi bi-envelope-fill ps-3" style="font-size: 23px;"></i></a>
-              <a href="#" target="_blank"><i class="bi bi-whatsapp ps-3" style="font-size: 23px;"></i></a>
+              <a href="https://wa.me/5511949686508" target="_blank"><i class="bi bi-whatsapp ps-3" style="font-size: 23px;"></i></a>
             </div>
-            Este site foi feito com <i class="bi bi-heart" style="color: red;"></i> por <a href="#" style="font-weight: 300;">Vinícius Koga</a>
+            Este site foi feito com <i class="bi bi-heart" style="color: red;"></i> por <a href="https://github.com/vinicius-koga" style="font-weight: 300;">Vinícius Koga</a>
           </div>
         </div>
       </div>

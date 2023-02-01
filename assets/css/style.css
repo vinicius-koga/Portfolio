@@ -338,6 +338,44 @@ footer .bi-links i:hover {
 }
 
 
+/* FADE IN ANIMATIONS */
+.fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-duration: 1.2s;
+    opacity: 1;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+    animation-duration: 1.2s;
+    opacity: 1;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
 /* MEDIA QUERY */
 @media(max-width: 991px) {
     .banner-area {

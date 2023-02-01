@@ -24,8 +24,8 @@ document.addEventListener('scroll', () => {
 
 //TYPING ANIMATION FN
 function typeTextAnimation(el) {
-    const textArr = el.innerHTML.split('');
-    el.innerHTML = '&nbsp;';
+    const text = 'DESENVOLVEDOR FRONT-END'
+    const textArr = text.split('');
     textArr.forEach((letter, index) => {
         setTimeout(() => {
             el.innerHTML += letter;
@@ -34,7 +34,43 @@ function typeTextAnimation(el) {
 }
 
 const insertText = document.querySelector('.typeTextAnimation');
-typeTextAnimation(insertText);
+setTimeout(() => {
+    typeTextAnimation(insertText);
+}, 1200);
+
+
+//HEADER SCROLL ON CLICK FN
+document.addEventListener('scroll', () => {
+    console.log(document.documentElement.scrollTop)
+})
+
+function scrollToAboutMe() {
+    if (window.innerWidth < 992) {
+        window.scrollTo({
+            top: 417,
+            behavior: "smooth"
+        });
+    } else if (window.innerWidth >= 992) {
+        window.scrollTo({
+            top: 690,
+            behavior: "smooth"
+        });
+    }
+};
+
+function scrollToProjects() {
+    if (window.innerWidth < 992) {
+        window.scrollTo({
+            top: 1665,
+            behavior: "smooth"
+        });
+    } else if (window.innerWidth >= 992) {
+        window.scrollTo({
+            top: 1610,
+            behavior: "smooth"
+        });
+    }
+}
 
 
 //SHOW MORE PROJECTS ON MOBILE FN
@@ -54,3 +90,32 @@ function showMore() {
     })
 
 }
+
+
+//FADE IN ON SCROLL FN
+const observer0 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            document.querySelector('.animated0').classList.add('fadeInLeft');
+        }
+    })
+})
+observer0.observe(document.querySelector('.animated0'));
+
+const observer1 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            document.querySelector('.animated1').classList.add('fadeInRight');
+        }
+    })
+})
+observer1.observe(document.querySelector('.animated1'));
+
+const observer2 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            document.querySelector('.animated2').classList.add('fadeInLeft');
+        }
+    })
+})
+observer2.observe(document.querySelector('.animated2'));
