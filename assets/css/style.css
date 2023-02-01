@@ -324,9 +324,9 @@ footer .footer-links a {
     transform: scale(1.05);
 }
 
-footer .footer-contentLeft a:hover {
-    text-decoration: underline;
-    color: var(--var-blue);
+footer .footer-links a:hover {
+    text-decoration: underline !important;
+    color: var(--var-blue) !important;
 }
 
 footer .bi-links i {
@@ -400,6 +400,10 @@ footer .bi-links i:hover {
 
 @media (max-width: 355px) {
     .mobile-greeting .mg-left {
+        display: none;
+    }
+
+    .mobileIconHidden {
         display: none;
     }
 }

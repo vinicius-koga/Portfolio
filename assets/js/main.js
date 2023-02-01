@@ -39,10 +39,13 @@ setTimeout(() => {
 }, 1200);
 
 
-//HEADER SCROLL ON CLICK FN
-document.addEventListener('scroll', () => {
-    console.log(document.documentElement.scrollTop)
-})
+//SCROLL ON CLICK FN
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
 
 function scrollToAboutMe() {
     if (window.innerWidth < 992) {
