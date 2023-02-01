@@ -73,6 +73,38 @@ function scrollToProjects() {
 }
 
 
+//HEADER ACTIVE LINK OBSERVER
+const linkObserver0 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            document.querySelectorAll('.navList .active').forEach(i => i.classList.remove('active'));
+            document.querySelectorAll('.navList .inicio').forEach(i => i.classList.add('active'));
+        }
+    })
+})
+linkObserver0.observe(document.querySelector('.inicio-intersection'));
+
+const linkObserver1 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            document.querySelectorAll('.navList .active').forEach(i => i.classList.remove('active'));
+            document.querySelectorAll('.navList .sobre-mim').forEach(i => i.classList.add('active'));
+        }
+    })
+})
+linkObserver1.observe(document.querySelector('.aboutme-intersection'));
+
+const linkObserver2 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            document.querySelectorAll('.navList .active').forEach(i => i.classList.remove('active'));
+            document.querySelectorAll('.navList .projetos').forEach(i => i.classList.add('active'));
+        }
+    })
+})
+linkObserver2.observe(document.querySelector('.projects-intersection'));
+
+
 //SHOW MORE PROJECTS ON MOBILE FN
 function showMore() {
     let mobileHidden = document.querySelectorAll('.project-area .mobileHidden');
