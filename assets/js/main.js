@@ -116,11 +116,11 @@ function showMore() {
         if (i.classList.contains('d-none')) {
             i.classList.remove('d-none');
             i.classList.add('d-flex');
-            mobileHiddenBtn.innerHTML = 'Ver menos'
+            mobileHiddenBtn.innerHTML = 'Ver menos projetos'
         } else if (i.classList.contains('d-flex')) {
             i.classList.remove('d-flex');
             i.classList.add('d-none');
-            mobileHiddenBtn.innerHTML = 'Ver mais'
+            mobileHiddenBtn.innerHTML = 'Ver mais projetos'
         }
     })
 
