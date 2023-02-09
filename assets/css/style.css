@@ -266,9 +266,13 @@ section.about-me-area {
     background-color: #000;
 }
 
+.modal-open[style] {
+    padding-right: 0px !important;
+}
+
 
 /* SECTION PROJECTS */
-.project-area .cardButton {
+.cardButton {
     background-image: linear-gradient(to right, var(--var-blue), var(--var-purple));
     color: #fff;
     padding-top: calc(0.5rem + 2px);
@@ -280,11 +284,15 @@ section.about-me-area {
     border: 0;
 }
 
-.project-area .cardButton:hover {
+.cardButton:hover {
     padding: 0.5rem 1.3rem;
     border: 2px solid var(--var-purple);
     background-image: none;
     color: var(--var-purple);
+}
+
+.project-area .project-img {
+    cursor: pointer;
 }
 
 .project-area .card-img-top {
