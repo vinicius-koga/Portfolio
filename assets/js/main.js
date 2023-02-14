@@ -50,7 +50,7 @@ function scrollToTop() {
 function scrollToAboutMe() {
     if (window.innerWidth < 992) {
         window.scrollTo({
-            top: 417,
+            top: 517,
             behavior: "smooth"
         });
     } else if (window.innerWidth >= 992) {
@@ -64,7 +64,7 @@ function scrollToAboutMe() {
 function scrollToProjects() {
     if (window.innerWidth < 992) {
         window.scrollTo({
-            top: 1665,
+            top: 1765,
             behavior: "smooth"
         });
     } else if (window.innerWidth >= 992) {
