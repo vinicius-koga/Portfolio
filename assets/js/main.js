@@ -69,7 +69,7 @@ function scrollToProjects() {
         });
     } else if (window.innerWidth >= 992) {
         window.scrollTo({
-            top: 1550,
+            top: 1650,
             behavior: "smooth"
         });
     }
