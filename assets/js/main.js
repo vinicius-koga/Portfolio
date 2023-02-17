@@ -47,34 +47,6 @@ function scrollToTop() {
     });
 };
 
-function scrollToAboutMe() {
-    if (window.innerWidth < 992) {
-        window.scrollTo({
-            top: 517,
-            behavior: "smooth"
-        });
-    } else if (window.innerWidth >= 992) {
-        window.scrollTo({
-            top: 690,
-            behavior: "smooth"
-        });
-    }
-};
-
-function scrollToProjects() {
-    if (window.innerWidth < 992) {
-        window.scrollTo({
-            top: 1765,
-            behavior: "smooth"
-        });
-    } else if (window.innerWidth >= 992) {
-        window.scrollTo({
-            top: 1650,
-            behavior: "smooth"
-        });
-    }
-}
-
 
 //HEADER ACTIVE LINK OBSERVER
 const linkObserver0 = new IntersectionObserver(entries => {
