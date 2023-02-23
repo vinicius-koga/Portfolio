@@ -139,6 +139,7 @@ header .navbar-toggler-icon:hover {
 /* SECTION BANNER */
 .banner-area {
     height: 100svh;
+    padding-top: 71px;
 }
 
 .banner-area .banner-left {
@@ -395,6 +396,7 @@ footer .bi-links i:hover {
 @media(max-width: 991px) {
     .banner-area {
         height: 75vh;
+        padding-top: 95px;
     }
 }
 
@@ -410,6 +412,9 @@ footer .bi-links i:hover {
 
     .nav-item.active::after {
         transform: scaleX(1);
+    }
+    .banner-area {
+        padding-top: 60px;
     }
 }
 
