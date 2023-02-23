@@ -39,15 +39,6 @@ setTimeout(() => {
 }, 1200);
 
 
-//SCROLL ON CLICK FN
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-};
-
-
 //HEADER ACTIVE LINK OBSERVER
 const linkObserver0 = new IntersectionObserver(entries => {
     entries.forEach(entry => {
