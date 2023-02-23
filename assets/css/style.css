@@ -348,6 +348,12 @@ footer .bi-links i:hover {
 
 
 /* FADE IN ANIMATIONS */
+.animated0,
+.animated1,
+.animated2 {
+    opacity: 0;
+}
+
 .fadeInLeft {
     animation-name: fadeInLeft;
     animation-duration: 1.2s;

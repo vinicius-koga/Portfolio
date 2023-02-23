@@ -201,16 +201,6 @@ function openModal(e) {
         modal.querySelector('.modal-footer').innerHTML = `
         Saiba mais em <a href="https://www.hostinger.com.br/tutoriais/o-que-github" target="_blank">Hostinger</a>`;
     }
-    // if (langTarget.classList.contains('')) {
-    //     modal.querySelector('.modal-header').innerHTML = `
-    //     `;
-
-    //     modal.querySelector('.modal-body').innerHTML = `
-    //     `;
-
-    //     modal.querySelector('.modal-footer').innerHTML = `
-    //     `;
-    // }
 }
 
 
