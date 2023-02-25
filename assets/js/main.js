@@ -77,12 +77,18 @@ function showMore() {
     let mobileHiddenBtn = document.querySelector('.project-area .seeMoreBtn');
     mobileHidden.forEach(i => {
         if (i.classList.contains('d-none')) {
+            i.classList.add('fadeInLeft')
+            i.classList.remove('reverseFadeInLeft');
             i.classList.remove('d-none');
             i.classList.add('d-flex');
             mobileHiddenBtn.innerHTML = 'Ver menos projetos'
         } else if (i.classList.contains('d-flex')) {
-            i.classList.remove('d-flex');
-            i.classList.add('d-none');
+            i.classList.remove('fadeInLeft')
+            i.classList.add('reverseFadeInLeft');
+            setTimeout(() => {
+                i.classList.remove('d-flex');
+                i.classList.add('d-none');
+            }, 800)
             mobileHiddenBtn.innerHTML = 'Ver mais projetos'
         }
     })
@@ -312,7 +318,7 @@ function openModal2(e) {
 const observer0 = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            document.querySelector('.animated0').classList.add('fadeInLeft');
+            document.querySelector('.animated0').classList.add('fadeInRight');
         }
     })
 })
@@ -321,7 +327,7 @@ observer0.observe(document.querySelector('.animated0'));
 const observer1 = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            document.querySelector('.animated1').classList.add('fadeInRight');
+            document.querySelector('.animated1').classList.add('fadeInLeft');
         }
     })
 })
