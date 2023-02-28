@@ -122,7 +122,7 @@ function openModal(e) {
         </ul>`;
 
         modal.querySelector('.modal-footer').innerHTML = `
-        Saiba mais em <a href="https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos" target="_blank">Hostinger</a>`;
+        Saiba mais em <cite><a href="https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos" target="_blank">Hostinger</a></cite>`;
     }
     if (langTarget.classList.contains('css')) {
         modal.querySelector('.modal-header').innerHTML = `
@@ -142,7 +142,7 @@ function openModal(e) {
         A partir destas complicações, nasceu o CSS. Primariamente, foi desenvolvido para habilitar a separação do conteúdo e formato de um documento (na linguagem de formatação utilizada) de sua apresentação, incluindo elementos como cores, formatos de fontes e layout. Esta separação proporcionou uma maior flexibilidade e controle na especificação de como as características serão exibidas, permitiu um compartilhamento de formato e reduziu a repetição no conteúdo estrutural de uma página.`;
 
         modal.querySelector('.modal-footer').innerHTML = `
-        Saiba mais em <a href="https://www.tecmundo.com.br/programacao/2705-o-que-e-css-.htm" target="_blank">TecMundo</a>`;
+        Saiba mais em <cite><a href="https://www.tecmundo.com.br/programacao/2705-o-que-e-css-.htm" target="_blank">TecMundo</a></cite>`;
     }
     if (langTarget.classList.contains('js')) {
         modal.querySelector('.modal-header').innerHTML = `
@@ -159,7 +159,7 @@ function openModal(e) {
         À medida que a linguagem amadureceu, desenvolvedores de JavaScript estabeleceram bibliotecas, frameworks e práticas de programação, além de começar a usá-la fora dos navegadores da Web. Hoje em dia, é possível usar JavaScript para desenvolvimento tanto do lado do cliente quanto do lado do servidor.`;
 
         modal.querySelector('.modal-footer').innerHTML = `
-        Saiba mais em <a href="https://aws.amazon.com/pt/what-is/javascript/" target="_blank">Amazon</a>`;
+        Saiba mais em <cite><a href="https://aws.amazon.com/pt/what-is/javascript/" target="_blank">Amazon</a></cite>`;
     }
     if (langTarget.classList.contains('bs')) {
         modal.querySelector('.modal-header').innerHTML = `
@@ -175,7 +175,7 @@ function openModal(e) {
         Antes de ser uma estrutura de código-fonte aberto, o Bootstrap era conhecido como Twitter Blueprint. Após alguns meses de desenvolvimento, o Twitter realizou sua primeira Hack Week: o projeto ganhou uma grande popularidade quando desenvolvedores de todos os níveis de habilidade usaram o framework sem qualquer orientação externa. Após o evento, ele serviu como guia de estilo para o desenvolvimento de ferramentas internas na empresa por mais de um ano antes de seu lançamento se tornar público.`;
 
         modal.querySelector('.modal-footer').innerHTML = `
-        Saiba mais em <a href="https://www.alura.com.br/artigos/bootstrap?gclid=CjwKCAiArNOeBhAHEiwAze_nKLcW3nyooSakT9T_-4Q52-xxF2X_1-4e9mJULzZA_hzOfSITdmB_2hoCjAQQAvD_BwE" target="_blank">Alura</a>`;
+        Saiba mais em <cite><a href="https://www.alura.com.br/artigos/bootstrap?gclid=CjwKCAiArNOeBhAHEiwAze_nKLcW3nyooSakT9T_-4Q52-xxF2X_1-4e9mJULzZA_hzOfSITdmB_2hoCjAQQAvD_BwE" target="_blank">Alura</a></cite>`;
     }
     if (langTarget.classList.contains('git')) {
         modal.querySelector('.modal-header').innerHTML = `
@@ -191,7 +191,7 @@ function openModal(e) {
         Ele permite ver o código de outras pessoas colaboradores, as diferenças que foram adicionadas ou removidas e mantém o histórico deles, ou seja, você pode voltar para qualquer versão anterior que estava funcionando, por exemplo.<br><br>`;
 
         modal.querySelector('.modal-footer').innerHTML = `
-        Saiba mais em <a href="https://blog.betrybe.com/git/" target="_blank">Betrybe</a>`;
+        Saiba mais em <cite><a href="https://blog.betrybe.com/git/" target="_blank">Betrybe</a></cite>`;
     }
     if (langTarget.classList.contains('github')) {
         modal.querySelector('.modal-header').innerHTML = `
@@ -205,7 +205,7 @@ function openModal(e) {
         Em suma, o GitHub é um serviço baseado em nuvem que hospeda um sistema de controle de versão (VCS) chamado Git. Ele permite que os desenvolvedores colaborem e façam mudanças em projetos compartilhados enquanto mantêm um registro detalhado do seu progresso.<br><br>`;
 
         modal.querySelector('.modal-footer').innerHTML = `
-        Saiba mais em <a href="https://www.hostinger.com.br/tutoriais/o-que-github" target="_blank">Hostinger</a>`;
+        Saiba mais em <cite><a href="https://www.hostinger.com.br/tutoriais/o-que-github" target="_blank">Hostinger</a></cite>`;
     }
 }
 
