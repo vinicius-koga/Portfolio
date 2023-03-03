@@ -174,10 +174,6 @@ section.about-me-area {
     transition: all 0.3s ease;
 }
 
-.about-me-right i:hover {
-    font-size: 33px;
-}
-
 
 /* SECTION MY-KNOWLEDGE */
 .lang-container img {
@@ -268,7 +264,7 @@ footer .footer-links a {
 }
 
 .footer-logo:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 footer .footer-links a:hover {
