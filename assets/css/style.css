@@ -411,6 +411,7 @@ footer .bi-links i:hover {
     }
 }
 
+
 @media (max-width: 767px) {
     .nav-item::after {
         transform-origin: left;

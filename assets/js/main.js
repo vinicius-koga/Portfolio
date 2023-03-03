@@ -92,7 +92,28 @@ function showMore() {
             mobileHiddenBtn.innerHTML = 'Ver mais projetos'
         }
     })
+}
 
+function showMoreDesktop() {
+    let mobileHidden = document.querySelectorAll('.project-area .desktopHidden');
+    let mobileHiddenBtn = document.querySelector('.project-area .seeMoreBtnDesktop');
+    mobileHidden.forEach(i => {
+        if (i.classList.contains('d-none')) {
+            i.classList.add('fadeInLeft')
+            i.classList.remove('reverseFadeInLeft');
+            i.classList.remove('d-none');
+            i.classList.add('d-flex');
+            mobileHiddenBtn.innerHTML = 'Ver menos projetos'
+        } else if (i.classList.contains('d-flex')) {
+            i.classList.remove('fadeInLeft')
+            i.classList.add('reverseFadeInLeft');
+            setTimeout(() => {
+                i.classList.remove('d-flex');
+                i.classList.add('d-none');
+            }, 800)
+            mobileHiddenBtn.innerHTML = 'Ver mais projetos'
+        }
+    })
 }
 
 
@@ -310,6 +331,18 @@ function openModal2(e) {
         modal2.querySelector('.modal-footer').innerHTML = `
         <a href="https://github.com/vinicius-koga/Password-Generator" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
         <a href="https://vinicius-koga.github.io/Password-Generator/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
+    }
+    if (pTarget.classList.contains('pizzaWebsite')) {
+        modal2.querySelector('.modal-header').innerHTML = `
+        <h1 class="modal-title fs-5" style="font-weight: 400;" id="exampleModalLabel">Pizza Delivery</h1>
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
+
+        modal2.querySelector('.modal-body').innerHTML = `
+        Some quick example text to build on the card title and make up the bulk of the card's content.`;
+
+        modal2.querySelector('.modal-footer').innerHTML = `
+        <a href="https://github.com/vinicius-koga/Pizza-Delivery" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+        <a href="https://vinicius-koga.github.io/Pizza-Delivery/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
     }
 }
 
