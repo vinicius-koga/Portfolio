@@ -191,6 +191,12 @@ section.about-me-area {
     transition: all 0.2s ease;
 }
 
+.custom-tooltip {
+    --bs-tooltip-bg: #eee;
+    --bs-tooltip-color: #000;
+    font-size: 1rem;
+}
+
 .lang-box:hover {
     transform: scale(1.05);
 }
@@ -249,7 +255,6 @@ section.about-me-area {
 .projects-link:hover {
     text-decoration: underline;
 }
-
 
 /* FOOTER */
 footer .footer-links a {
