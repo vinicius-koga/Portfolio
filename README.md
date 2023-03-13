@@ -1,6 +1,6 @@
 # Portfólio
 
-Site desenvolvido com o intuito de mostrar quem eu sou e demonstrar minhas habilidades. Nele você encontrará meus projetos, minha biografia, meus conhecimentos e meu curriculo profissional.
+Site desenvolvido com o intuito de mostrar quem eu sou e demonstrar minhas habilidades. Nele você encontrará meus projetos, minha biografia, meus conhecimentos e meu currículo profissional.
 
 ### Tecnologias Utilizadas:
 <ul>
