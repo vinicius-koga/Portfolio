@@ -24,7 +24,7 @@ document.addEventListener('scroll', () => {
 
 //TYPING ANIMATION FN
 function typeTextAnimation(el) {
-    const text = 'DESENVOLVEDOR FRONT-END'
+    const text = 'DESENVOLVEDOR FRONT-END.'
     const textArr = text.split('');
     textArr.forEach((letter, index) => {
         setTimeout(() => {
@@ -128,9 +128,6 @@ function openModal2(e) {
         <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
 
         modal2.querySelector('.modal-body').innerHTML = `
-        Some quick example text to build on the card title and make up the bulk of the card's content.`;
-
-        modal2.querySelector('.modal-footer').innerHTML = `
         <a href="https://github.com/vinicius-koga/Education-Website" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
         <a href="https://vinicius-koga.github.io/Education-Website/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
     }
@@ -140,9 +137,6 @@ function openModal2(e) {
         <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
 
         modal2.querySelector('.modal-body').innerHTML = `
-        Some quick example text to build on the card title and make up the bulk of the card's content.`;
-
-        modal2.querySelector('.modal-footer').innerHTML = `
         <a href="https://github.com/vinicius-koga/Dashboard" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
         <a href="https://vinicius-koga.github.io/Dashboard/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
     }
@@ -152,9 +146,6 @@ function openModal2(e) {
         <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
 
         modal2.querySelector('.modal-body').innerHTML = `
-        Some quick example text to build on the card title and make up the bulk of the card's content.`;
-
-        modal2.querySelector('.modal-footer').innerHTML = `
         <a href="https://github.com/vinicius-koga/Prime-Gaming-Clone" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
         <a href="https://vinicius-koga.github.io/Prime-Gaming-Clone/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
     }
@@ -164,21 +155,15 @@ function openModal2(e) {
         <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
 
         modal2.querySelector('.modal-body').innerHTML = `
-        Some quick example text to build on the card title and make up the bulk of the card's content.`;
-
-        modal2.querySelector('.modal-footer').innerHTML = `
         <a href="https://github.com/vinicius-koga/Tic-Tac-Toe" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
         <a href="https://vinicius-koga.github.io/Tic-Tac-Toe/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
     }
     if (pTarget.classList.contains('formValidator')) {
         modal2.querySelector('.modal-header').innerHTML = `
-        <h1 class="modal-title fs-5" style="font-weight: 400;" id="exampleModalLabel">Validador de Formulários em Javascript</h1>
+        <h1 class="modal-title fs-5" style="font-weight: 400;" id="exampleModalLabel">Validador de Formulários</h1>
         <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
 
         modal2.querySelector('.modal-body').innerHTML = `
-        Some quick example text to build on the card title and make up the bulk of the card's content.`;
-
-        modal2.querySelector('.modal-footer').innerHTML = `
         <a href="https://github.com/vinicius-koga/Form-Validator" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
         <a href="https://vinicius-koga.github.io/Form-Validator/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
     }
@@ -188,9 +173,6 @@ function openModal2(e) {
         <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
 
         modal2.querySelector('.modal-body').innerHTML = `
-        Some quick example text to build on the card title and make up the bulk of the card's content.`;
-
-        modal2.querySelector('.modal-footer').innerHTML = `
         <a href="https://github.com/vinicius-koga/Calculator" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
         <a href="https://vinicius-koga.github.io/Calculator/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
     }
@@ -200,9 +182,6 @@ function openModal2(e) {
         <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
 
         modal2.querySelector('.modal-body').innerHTML = `
-        Some quick example text to build on the card title and make up the bulk of the card's content.`;
-
-        modal2.querySelector('.modal-footer').innerHTML = `
         <a href="https://github.com/vinicius-koga/Gif-Searcher" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
         <a href="https://vinicius-koga.github.io/Gif-Searcher/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
     }
@@ -212,9 +191,6 @@ function openModal2(e) {
         <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
 
         modal2.querySelector('.modal-body').innerHTML = `
-        Some quick example text to build on the card title and make up the bulk of the card's content.`;
-
-        modal2.querySelector('.modal-footer').innerHTML = `
         <a href="https://github.com/vinicius-koga/Password-Generator" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
         <a href="https://vinicius-koga.github.io/Password-Generator/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
     }
@@ -224,9 +200,6 @@ function openModal2(e) {
         <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
 
         modal2.querySelector('.modal-body').innerHTML = `
-        Some quick example text to build on the card title and make up the bulk of the card's content.`;
-
-        modal2.querySelector('.modal-footer').innerHTML = `
         <a href="https://github.com/vinicius-koga/Pizza-Delivery" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
         <a href="https://vinicius-koga.github.io/Pizza-Delivery/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
     }
