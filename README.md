@@ -10,3 +10,4 @@ Site desenvolvido com o intuito de mostrar quem eu sou e demonstrar minhas habil
   <li>BOOTSTRAP</li>
 </ul>
 
+### Este site é responsivo a dispositivos mobile.
