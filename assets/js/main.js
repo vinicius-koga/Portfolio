@@ -3,7 +3,6 @@ const header = document.querySelector('header');
 const secBanner = document.querySelector('.banner-area');
 document.addEventListener('scroll', () => {
     let scrollOffset = window.pageYOffset;
-    console.log(scrollOffset);
     if (scrollOffset > 400) {
         header.style.position = 'fixed';
         header.classList.remove('hiddeHeaderAnimation');
@@ -71,7 +70,7 @@ const linkObserver2 = new IntersectionObserver(entries => {
 linkObserver2.observe(document.querySelector('.projects-intersection'));
 
 
-//SHOW MORE PROJECTS ON MOBILE FN
+//SHOW MORE PROJECTS FN
 function showMore() {
     let mobileHidden = document.querySelectorAll('.project-area .mobileHidden');
     let mobileHiddenBtn = document.querySelector('.project-area .seeMoreBtn');
@@ -121,87 +120,40 @@ function showMoreDesktop() {
 document.querySelectorAll('.project-img').forEach(i => i.addEventListener('click', openModal2));
 function openModal2(e) {
     let pTarget = e.target;
-    let modal2 = document.querySelector('#projects-modal');
-    if (pTarget.classList.contains('educationWebsite')) {
-        modal2.querySelector('.modal-header').innerHTML = `
-        <h1 class="modal-title fs-5" style="font-weight: 400;" id="exampleModalLabel">Site de Educação</h1>
-        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
+    let pCard = pTarget.closest('.card');
+    let pTitle = pCard.querySelector('.card-title').innerText;
+    let pProject = pCard.querySelector('.card-footer a').getAttribute('href')
 
-        modal2.querySelector('.modal-body').innerHTML = `
-        <a href="https://github.com/vinicius-koga/Education-Website" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
-        <a href="https://vinicius-koga.github.io/Education-Website/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
+    let modal2 = document.querySelector('#projects-modal');
+    modal2.querySelector('.modal-title').innerHTML = pTitle;
+    modal2.querySelector('.modal-link-p').setAttribute('href', pProject);
+
+    if (pTarget.classList.contains('educationWebsite')) {
+        modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Education-Website');
     }
     if (pTarget.classList.contains('dashboard')) {
-        modal2.querySelector('.modal-header').innerHTML = `
-        <h1 class="modal-title fs-5" style="font-weight: 400;" id="exampleModalLabel">Dashboard</h1>
-        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
-
-        modal2.querySelector('.modal-body').innerHTML = `
-        <a href="https://github.com/vinicius-koga/Dashboard" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
-        <a href="https://vinicius-koga.github.io/Dashboard/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
+        modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Dashboard');
     }
     if (pTarget.classList.contains('primeGaming')) {
-        modal2.querySelector('.modal-header').innerHTML = `
-        <h1 class="modal-title fs-5" style="font-weight: 400;" id="exampleModalLabel">Prime Gaming Homepage</h1>
-        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
-
-        modal2.querySelector('.modal-body').innerHTML = `
-        <a href="https://github.com/vinicius-koga/Prime-Gaming-Clone" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
-        <a href="https://vinicius-koga.github.io/Prime-Gaming-Clone/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
+        modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Prime-Gaming-Clone');
     }
     if (pTarget.classList.contains('jogoDaVelha')) {
-        modal2.querySelector('.modal-header').innerHTML = `
-        <h1 class="modal-title fs-5" style="font-weight: 400;" id="exampleModalLabel">Jogo da Velha</h1>
-        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
-
-        modal2.querySelector('.modal-body').innerHTML = `
-        <a href="https://github.com/vinicius-koga/Tic-Tac-Toe" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
-        <a href="https://vinicius-koga.github.io/Tic-Tac-Toe/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
+        modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Tic-Tac-Toe');
     }
     if (pTarget.classList.contains('formValidator')) {
-        modal2.querySelector('.modal-header').innerHTML = `
-        <h1 class="modal-title fs-5" style="font-weight: 400;" id="exampleModalLabel">Validador de Formulários</h1>
-        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
-
-        modal2.querySelector('.modal-body').innerHTML = `
-        <a href="https://github.com/vinicius-koga/Form-Validator" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
-        <a href="https://vinicius-koga.github.io/Form-Validator/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
+        modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Form-Validator');
     }
     if (pTarget.classList.contains('calculator')) {
-        modal2.querySelector('.modal-header').innerHTML = `
-        <h1 class="modal-title fs-5" style="font-weight: 400;" id="exampleModalLabel">Calculadora Simples</h1>
-        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
-
-        modal2.querySelector('.modal-body').innerHTML = `
-        <a href="https://github.com/vinicius-koga/Calculator" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
-        <a href="https://vinicius-koga.github.io/Calculator/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
+        modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Calculator');
     }
     if (pTarget.classList.contains('gifSearcher')) {
-        modal2.querySelector('.modal-header').innerHTML = `
-        <h1 class="modal-title fs-5" style="font-weight: 400;" id="exampleModalLabel">Buscador de Gif's</h1>
-        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
-
-        modal2.querySelector('.modal-body').innerHTML = `
-        <a href="https://github.com/vinicius-koga/Gif-Searcher" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
-        <a href="https://vinicius-koga.github.io/Gif-Searcher/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
+        modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Gif-Searcher');
     }
     if (pTarget.classList.contains('passwordGen')) {
-        modal2.querySelector('.modal-header').innerHTML = `
-        <h1 class="modal-title fs-5" style="font-weight: 400;" id="exampleModalLabel">Gerador de Senhas</h1>
-        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
-
-        modal2.querySelector('.modal-body').innerHTML = `
-        <a href="https://github.com/vinicius-koga/Password-Generator" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
-        <a href="https://vinicius-koga.github.io/Password-Generator/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
+        modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Password-Generator');
     }
     if (pTarget.classList.contains('pizzaWebsite')) {
-        modal2.querySelector('.modal-header').innerHTML = `
-        <h1 class="modal-title fs-5" style="font-weight: 400;" id="exampleModalLabel">Pizza Delivery</h1>
-        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>`;
-
-        modal2.querySelector('.modal-body').innerHTML = `
-        <a href="https://github.com/vinicius-koga/Pizza-Delivery" target="_blank"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
-        <a href="https://vinicius-koga.github.io/Pizza-Delivery/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>`;
+        modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Pizza-Delivery');
     }
 }
 
