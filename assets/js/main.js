@@ -130,29 +130,21 @@ function openModal2(e) {
 
     if (pTarget.classList.contains('educationWebsite')) {
         modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Education-Website');
-    }
-    if (pTarget.classList.contains('dashboard')) {
+    } else if (pTarget.classList.contains('dashboard')) {
         modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Dashboard');
-    }
-    if (pTarget.classList.contains('primeGaming')) {
+    } else if (pTarget.classList.contains('primeGaming')) {
         modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Prime-Gaming-Clone');
-    }
-    if (pTarget.classList.contains('jogoDaVelha')) {
+    } else if (pTarget.classList.contains('jogoDaVelha')) {
         modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Tic-Tac-Toe');
-    }
-    if (pTarget.classList.contains('formValidator')) {
+    } else if (pTarget.classList.contains('formValidator')) {
         modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Form-Validator');
-    }
-    if (pTarget.classList.contains('calculator')) {
+    } else if (pTarget.classList.contains('calculator')) {
         modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Calculator');
-    }
-    if (pTarget.classList.contains('gifSearcher')) {
+    } else if (pTarget.classList.contains('gifSearcher')) {
         modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Gif-Searcher');
-    }
-    if (pTarget.classList.contains('passwordGen')) {
+    } else if (pTarget.classList.contains('passwordGen')) {
         modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Password-Generator');
-    }
-    if (pTarget.classList.contains('pizzaWebsite')) {
+    } else if (pTarget.classList.contains('pizzaWebsite')) {
         modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Pizza-Delivery');
     }
 }
