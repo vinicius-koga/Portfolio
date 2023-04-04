@@ -80,7 +80,7 @@ function showMore() {
             i.classList.remove('reverseFadeInLeft');
             i.classList.remove('d-none');
             i.classList.add('d-flex');
-            mobileHiddenBtn.innerHTML = 'Ver menos projetos'
+            mobileHiddenBtn.innerHTML = `Ver menos projetos <i class="bi bi-arrow-up"></i>`
         } else if (i.classList.contains('d-flex')) {
             i.classList.remove('fadeInLeft')
             i.classList.add('reverseFadeInLeft');
@@ -88,7 +88,7 @@ function showMore() {
                 i.classList.remove('d-flex');
                 i.classList.add('d-none');
             }, 800)
-            mobileHiddenBtn.innerHTML = 'Ver mais projetos'
+            mobileHiddenBtn.innerHTML = `Ver mais projetos <i class="bi bi-arrow-down"></i>`
         }
     })
 }
@@ -102,7 +102,7 @@ function showMoreDesktop() {
             i.classList.remove('reverseFadeInLeft');
             i.classList.remove('d-none');
             i.classList.add('d-flex');
-            mobileHiddenBtn.innerHTML = 'Ver menos projetos'
+            mobileHiddenBtn.innerHTML = `Ver menos projetos <i class="bi bi-arrow-up"></i>`
         } else if (i.classList.contains('d-flex')) {
             i.classList.remove('fadeInLeft')
             i.classList.add('reverseFadeInLeft');
@@ -110,7 +110,7 @@ function showMoreDesktop() {
                 i.classList.remove('d-flex');
                 i.classList.add('d-none');
             }, 800)
-            mobileHiddenBtn.innerHTML = 'Ver mais projetos'
+            mobileHiddenBtn.innerHTML = `Ver mais projetos <i class="bi bi-arrow-down"></i>`
         }
     })
 }
@@ -146,6 +146,8 @@ function openModal2(e) {
         modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Password-Generator');
     } else if (pTarget.classList.contains('pizzaWebsite')) {
         modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Pizza-Delivery');
+    } else if (pTarget.classList.contains('cssHover')) {
+        modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/CSS-Hover-Effect');
     }
 }
 
@@ -177,3 +179,14 @@ const observer2 = new IntersectionObserver(entries => {
     })
 })
 observer2.observe(document.querySelector('.animated2'));
+
+
+//VANILLA TILT
+VanillaTilt.init(document.querySelector("#banner-avatar"), {
+    max: 15,
+    speed: 400
+});
+
+VanillaTilt.init(document.querySelectorAll(".lang-box"), {
+    speed: 400
+});

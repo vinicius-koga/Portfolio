@@ -187,17 +187,13 @@ section.about-me-area {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.2s ease;
 }
 
 .custom-tooltip {
     --bs-tooltip-bg: #eee;
     --bs-tooltip-color: #000;
     font-size: 1rem;
-}
-
-.lang-box:hover {
-    transform: scale(1.05);
+    --bs-tooltip-color: #333;
 }
 
 .my-knowledge-line {
@@ -255,12 +251,46 @@ section.about-me-area {
     text-decoration: underline;
 }
 
+span[class*="seeMoreBtn"] {
+    font-weight: 400;
+    color: var(--var-purple);
+    width: auto;
+    cursor: pointer;
+    border: 1px solid var(--var-purple);
+    padding: 5px 13px;
+    transition: 0.2s ease;
+    font-size: 0.9em;
+}
+
+span[class*="seeMoreBtn"]:hover {
+    background-image: linear-gradient(to right, var(--var-blue), var(--var-purple));
+    color: #fff;
+}
+
+span[class*="seeMoreBtn"] i {
+    font-size: 1.1rem;
+}
+
+
 /* FOOTER */
+.footer-box {
+    border-left: 1px solid #ccc;
+}
+
 footer .footer-links a {
     font-weight: 300;
     text-decoration: none;
     color: #555;
-    padding-right: 15px;
+    padding: 0 8px;
+    border-right: 1px solid #ccc;
+}
+
+footer .footer-links a:first-child {
+    padding-left: 0;
+}
+
+footer .footer-links a:last-child {
+    border-right: 0;
 }
 
 .footer-logo {
@@ -282,6 +312,39 @@ footer .bi-links i {
 
 footer .bi-links i:hover {
     color: var(--var-blue);
+}
+
+
+/* SHOW TEXT BOTTOM ON HOVER EFFECT */
+.show-bottom {
+    position: relative;
+    overflow: hidden;
+}
+
+.show-bottom:hover {
+    transform: scale(1.03);
+}
+
+.show-bottom-hover {
+    position: absolute;
+    transition: 0.4s ease;
+    bottom: -45px;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-bottom-hover a {
+    text-decoration: none;
+}
+
+.show-bottom:hover .show-bottom-hover {
+    bottom: 0;
 }
 
 
@@ -431,6 +494,9 @@ footer .bi-links i:hover {
     }
     .banner-area {
         padding-top: 60px;
+    }
+    .footer-box {
+        border-left: none;
     }
 }
 

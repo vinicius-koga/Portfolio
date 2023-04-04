@@ -73,9 +73,9 @@
             </div>
           </div>
           <!-- BANNER-RIGHT -->
-          <div class="col h-100 ps-0 d-none d-lg-block" style="overflow-y: hidden;">
+          <div class="col h-100 ps-0 d-none d-lg-block" style="overflow: hidden;">
             <div class="banner-right h-100 d-flex align-items-center justify-content-end">
-              <img src="assets/imgs/banner-bg-2.png" alt="Home Page Background" class="img-fluid">
+              <img src="assets/imgs/banner-bg-2.png" alt="Home Page Background" class="img-fluid" id="banner-avatar">
             </div>
           </div>
         </div>
@@ -97,8 +97,11 @@
             <div class="about-me-container p-4 p-sm-5 rounded border">
               <div class="row h-100">
                 <!-- LEFT-SIDE -->
-                <div class="col-12 col-md-4 d-none d-md-block">
+                <div class="col-12 col-md-4 d-none d-md-block show-bottom" style="transition: 0.4s ease;">
                   <img src="assets/imgs/profile-pic-web.jpg" alt="Profile Picture" title="Profile Picture" class="img-fluid rounded">
+                  <div class="show-bottom-hover">
+                    Baixe meu&nbsp;<a href="#">currículo<i class="bi bi-download ms-1 me-0" style="font-size: 1rem;"></i></a>
+                  </div>
                 </div>
                 <!-- RIGHT-SIDE -->
                 <div class="col-12 col-md-8 about-me-right">
@@ -111,9 +114,8 @@
                       <p class="mb-3" style="font-weight: 400; font-size: 2rem; color: var(--var-blue);">Vinícius Koga</p>
                     </div>
                   </div>
-                  <p class="mb-4" style="font-weight: 300;">Sou uma pessoa com alto interesse em design e tecnologias de desenvolvimento web. Estes gostos em comum me fizeram conhecer a profissão de desenvolvedor front-end, onde escolhi me dedicar a estar sempre buscando aprender novas tecnologias com o objetivo de me tornar um profissional na área. <br><br>
+                  <p class="mb-0" style="font-weight: 300;">Sou uma pessoa com alto interesse em design e tecnologias de desenvolvimento web. Estes gostos em comum me fizeram conhecer a profissão de desenvolvedor front-end, onde escolhi me dedicar a estar sempre buscando aprender novas tecnologias com o objetivo de me tornar um profissional na área. <br><br>
                   Por amar o "trio do desenvolvedor front-end" (HTML, CSS e Javascript), tenho buscado aprender frameworks, bibliotecas e pré-processadores que me ajudem a desenvolver projetos ainda mais complexos com eles. Entre eles estão: Bootstrap, Sass, Typescript e React.js <br><br>
-                  Baixe meu <a href="#" style="font-weight: 300;">currículo profissional<i class="bi bi-download ms-1 me-0" style="font-size: 1rem;"></i></a>
                   </p>                 
                   <a href="https://www.linkedin.com/in/vin%C3%ADcius-koga-622447245/" target="_blank"><i title="LinkedIn" class="bi bi-linkedin" style="color: #2663a9;" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="LINKEDIN"></i></a>
                   <a href="https://github.com/vinicius-koga" target="_blank" class="aboutme-intersection"><i title="Github" class="bi bi-github" style="color: #e44d30;" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="GITHUB"></i></a> 
@@ -138,39 +140,39 @@
           <div class="col-12 col-lg-7">
             <div class="row row-cols-2 row-cols-md-4 h-100 lang-container pt-4 pt-lg-0">
               <div class="col d-flex justify-content-center align-items-center">
-                <div class="lang-box html p-4 border rounded mb-3" style="height: 140px;"> <img src="assets/imgs/html5-logo.png" alt="HTML Logo" title="HTML" class="img-fluid lang-img html" data-bs-toggle="tooltip" data-bs-placement="top"
-                  data-bs-custom-class="custom-tooltip"
-                  data-bs-title="HTML"> </div>
+                <div data-tilt data-tilt-scale="1.1" class="lang-box html p-4 border rounded mb-3 show-bottom" style="height: 140px;"> <img src="assets/imgs/html5-logo.png" alt="HTML Logo" title="HTML" class="img-fluid lang-img html">                   <div class="show-bottom-hover">
+                    HTML
+                  </div> </div>
               </div>
               <div class="col d-flex justify-content-center align-items-center">
-                <div class="lang-box css p-4 border rounded mb-3" style="height: 140px;"> <img src="assets/imgs/css-logo.png" alt="CSS Logo" title="CSS" class="img-fluid lang-img css" data-bs-toggle="tooltip" data-bs-placement="top"
-                  data-bs-custom-class="custom-tooltip"
-                  data-bs-title="CSS"> </div>
+                <div data-tilt data-tilt-scale="1.1" class="lang-box css p-4 border rounded mb-3 show-bottom" style="height: 140px;"> <img src="assets/imgs/css-logo.png" alt="CSS Logo" title="CSS" class="img-fluid lang-img css">                  <div class="show-bottom-hover">
+                    CSS
+                  </div> </div>
               </div>
               <div class="col d-flex justify-content-center align-items-center mt-3 mt-md-0">
-                <div class="lang-box js p-4 border rounded mb-3" style="height: 140px;"> <img src="assets/imgs/JavaScript-Logo.png" alt="JAVASCRIPT Logo" title="JAVASCRIPT" class="img-fluid lang-img js" data-bs-toggle="tooltip" data-bs-placement="top"
-                  data-bs-custom-class="custom-tooltip"
-                  data-bs-title="JAVASCRIPT"> </div>
+                <div data-tilt data-tilt-scale="1.1" class="lang-box js p-4 border rounded mb-3 show-bottom" style="height: 140px;"> <img src="assets/imgs/JavaScript-Logo.png" alt="JAVASCRIPT Logo" title="JAVASCRIPT" class="img-fluid lang-img js">                  <div class="show-bottom-hover">
+                    Javascript
+                  </div> </div>
               </div>
               <div class="col d-flex justify-content-center align-items-center mt-3 mt-md-0">
-                <div class="lang-box sass p-4 border rounded mb-3" style="height: 140px;"> <img src="assets/imgs/sass-logo.png" alt="SASS Logo" title="SASS" class="img-fluid lang-img sass" data-bs-toggle="tooltip" data-bs-placement="top"
-                  data-bs-custom-class="custom-tooltip"
-                  data-bs-title="SASS"> </div>
+                <div data-tilt data-tilt-scale="1.1" class="lang-box sass p-4 border rounded mb-3 show-bottom" style="height: 140px;"> <img src="assets/imgs/sass-logo.png" alt="SASS Logo" title="SASS" class="img-fluid lang-img sass">                  <div class="show-bottom-hover">
+                    Sass
+                  </div> </div>
               </div>
               <div class="col d-flex justify-content-center align-items-center mt-3 mt-md-0">
-                <div class="lang-box bs p-4 border rounded mb-3" style="height: 140px;"> <img src="assets/imgs/Bootstrap-logo.png" alt="BOOTSTRAP Logo" title="Bootstrap" class="img-fluid lang-img bs" data-bs-toggle="tooltip" data-bs-placement="top"
-                  data-bs-custom-class="custom-tooltip"
-                  data-bs-title="BOOTSTRAP"> </div>
+                <div data-tilt data-tilt-scale="1.1" class="lang-box bs p-4 border rounded mb-3 show-bottom" style="height: 140px;"> <img src="assets/imgs/Bootstrap-logo.png" alt="BOOTSTRAP Logo" title="Bootstrap" class="img-fluid lang-img bs">                  <div class="show-bottom-hover">
+                    Bootstrap
+                  </div> </div>
               </div>
               <div class="col d-flex justify-content-center align-items-center mt-3 mt-md-0">
-                <div class="lang-box git p-4 border rounded mb-3" style="height: 140px;"> <img src="assets/imgs/Git-Icon.png" alt="GIT Logo" title="GIT" class="img-fluid lang-img git" data-bs-toggle="tooltip" data-bs-placement="top"
-                  data-bs-custom-class="custom-tooltip"
-                  data-bs-title="GIT"> </div>
+                <div data-tilt data-tilt-scale="1.1" class="lang-box git p-4 border rounded mb-3 show-bottom" style="height: 140px;"> <img src="assets/imgs/Git-Icon.png" alt="GIT Logo" title="GIT" class="img-fluid lang-img git">                  <div class="show-bottom-hover">
+                    Git
+                  </div> </div>
               </div>
               <div class="col d-flex justify-content-center align-items-center mt-3 mt-md-0">
-                <div class="lang-box github p-4 border rounded mb-3" style="height: 140px;"> <img src="assets/imgs/Github-logo.png" alt="Github Logo" title="Github" class="img-fluid lang-img github" data-bs-toggle="tooltip" data-bs-placement="top"
-                  data-bs-custom-class="custom-tooltip"
-                  data-bs-title="GITHUB"> </div>
+                <div data-tilt data-tilt-scale="1.1" class="lang-box github p-4 border rounded mb-3 show-bottom" style="height: 140px;"> <img src="assets/imgs/Github-logo.png" alt="Github Logo" title="Github" class="img-fluid lang-img github">                  <div class="show-bottom-hover">
+                    Github
+                  </div> </div>
               </div>
             </div>
           </div>
@@ -363,18 +365,31 @@
               </div>
             </div>
           </div>
+          <div class="desktopHidden mobileHidden col mb-4 justify-content-center d-none">
+            <div class="card" style="width: 18rem;">
+              <div class="imgContainer" style="overflow: hidden;  position: relative;">
+                <div class="project-img" data-bs-toggle="modal" data-bs-target="#projects-modal">
+                  <img src="assets/imgs/html5-logo.png" alt="HTML" title="HTML" style="width: 25px; position: absolute; top: 5px; left: 5px; z-index: 2;" class="cardLangIcon cssHover">
+                  <img src="assets/imgs/sass-logo.png" alt="Sass" title="Sass" style="width: 30px; position: absolute; top: 5px; left: 35px; z-index: 2;" class="cardLangIcon cssHover">
+                  <img src="assets/imgs/Projeto10.png" class="card-img-top cssHover" alt="CSS Hover Effect" title="CSS Hover Effect" style="max-height: 168px; min-height: 168px;">
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: 400;">CSS Hover Effect</h5>
+                <p class="card-text" style="font-weight: 300;">Um exemplo de efeito ao passar o mouse em cima de itens.</p>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a href="https://vinicius-koga.github.io/CSS-Hover-Effect/" target="_blank"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="text-center mb-4 d-none d-md-block">
-          <span class="text-decoration-underline seeMoreBtnDesktop" style="font-weight: 400; color: var(--var-purple); cursor: pointer;" onclick="showMoreDesktop()">Ver mais projetos</span>
+          <span class="seeMoreBtnDesktop rounded d-inline-block" onclick="showMoreDesktop()">Ver mais projetos <i class="bi bi-arrow-down"></i></span>
         </div>
         <div class="text-center mb-4 d-block d-md-none">
-          <span class="text-decoration-underline seeMoreBtn" style="font-weight: 400; color: var(--var-purple); cursor: pointer;" onclick="showMore()">Ver mais projetos</span>
+          <span class="seeMoreBtn rounded d-inline-block" onclick="showMore()">Ver mais projetos <i class="bi bi-arrow-down"></i></span>
         </div>
-    </section>
-
-    <!-- REPOSITORIES -->
-    <section class="text-center py-3 mb-4" style="background-color: #f6f7f7;">
-      <a href="https://github.com/vinicius-koga?tab=repositories" target="_blank"><button class="btn cardButton">Repositórios no Github<i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
     </section>
 
     <!-- FOOTER -->
@@ -384,24 +399,26 @@
           <div class="col-12 col-md-auto d-flex align-items-center justify-content-center pe-3">
             <a style="cursor: pointer;" href="#inicio"><img src="assets/imgs/logo.png" alt="Footer Logo" style="width: 110px;" class="pt-0 pt-md-3 pb-3 footer-logo"></a>
           </div>
-          <div class="col-12 col-md-auto border-start ps-3 d-flex flex-column justify-content-center">
+          <div class="col-12 col-md-auto footer-box ps-3 d-flex flex-column justify-content-center">
             <div class="footer-contentLeft" style="font-weight: 300; color: #555;">
-              <div class="footer-links mb-1 text-center text-md-start">
+              <div class="footer-links mb-3 mb-md-2 text-center text-md-start">
                 <a style="cursor: pointer;" href="#inicio">Início</a>
                 <a style="cursor: pointer;" href="#sobre-mim">Sobre</a>
                 <a style="cursor: pointer;" href="#projetos">Projetos</a>
                 <a href="#">Currículo<i class="bi bi-download ms-1 mobileIconHidden"></i></a>
               </div>
+              <div class="footer-repo text-center" style="font-weight: 300;">
+                Veja todos os meus <a href="https://github.com/vinicius-koga?tab=repositories" target="_blank" style="font-weight: 300;">repositórios<i class="bi bi-box-arrow-up-right ms-1"></i></a> no Github.
+              </div>
             </div>
           </div>
           <div class="col-12 col-md mt-3 mt-md-0 text-center text-md-end" style="font-weight: 300; color: #555;">
-            <div class="d-flex justify-content-center justify-content-md-end bi-links mb-2">
+            <div class="d-flex justify-content-center justify-content-md-end bi-links mb-0">
               <a href="https://www.linkedin.com/in/vin%C3%ADcius-koga-622447245/" target="_blank"><i title="linkedIn" class="bi bi-linkedin ps-3" style="font-size: 23px;"></i></a>
               <a href="https://github.com/vinicius-koga" target="_blank"><i title="Github" class="bi bi-github ps-3" style="font-size: 23px;"></i></a>
               <a href="mailto:vinicius_koga@outlook.com" target="_blank"><i title="E-mail" class="bi bi-envelope-fill ps-3" style="font-size: 23px;"></i></a>
               <a href="https://wa.me/5511949686508" target="_blank"><i title="Whatsapp" class="bi bi-whatsapp ps-3" style="font-size: 23px;"></i></a>
             </div>
-            Este site foi feito com <i class="bi bi-heart" style="color: red;"></i> por <a href="https://github.com/vinicius-koga" style="font-weight: 300;" target="_blank">Vinícius Koga</a>
           </div>
         </div>
       </div>
@@ -410,15 +427,15 @@
 
     <!-- MODALS -->
     <div class="modal fade" id="projects-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content" style="max-height: 55vh;">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="display: flex; justify-content: center;">
+        <div class="modal-content" style="max-height: 55vh; width: auto;">
           <div class="modal-header">
             <h1 class="modal-title fs-5" style="font-weight: 400;" id="exampleModalLabel">    </h1>
             <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body d-flex justify-content-around" style="font-weight: 300;">
-            <a target="_blank" class="modal-link-r"><button class="btn cardButton">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
-            <a target="_blank" class="modal-link-p"><button class="btn cardButton">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+            <a target="_blank" class="modal-link-r"><button class="btn cardButton mx-2">Ver repositório <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
+            <a target="_blank" class="modal-link-p"><button class="btn cardButton mx-2">Ver projeto <i class="bi bi-box-arrow-up-right ms-1"></i></button></a>
           </div>
         </div>
       </div>
@@ -429,6 +446,7 @@
       const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
       const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
+    <script type="text/javascript" src="assets/js/vanilla-tilt.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
