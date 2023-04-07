@@ -160,6 +160,11 @@ header .navbar-toggler-icon:hover {
 
 
 /* SECTION ABOUT ME */
+.img-box {
+    position: relative;
+    overflow: hidden;
+}
+
 section.about-me-area {
     height: auto;
 }
