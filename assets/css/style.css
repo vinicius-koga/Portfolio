@@ -232,6 +232,19 @@ section.about-me-area {
     color: var(--var-purple);
 }
 
+.cardLang-box {
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    padding: 5px 0px 0px 5px;
+    align-items: center;
+}
+
+.cardLangIcon {
+    width: 25px;
+    z-index: 2;
+}
+
 .project-area .project-img {
     cursor: pointer;
 }
