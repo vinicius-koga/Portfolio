@@ -291,39 +291,6 @@ span[class*="seeMoreBtn"] i {
 
 
 /* FOOTER */
-.footer-box {
-    border-left: 1px solid #ccc;
-}
-
-footer .footer-links a {
-    font-weight: 300;
-    text-decoration: none;
-    color: #555;
-    padding: 0 8px;
-    border-right: 1px solid #ccc;
-}
-
-footer .footer-links a:first-child {
-    padding-left: 0;
-}
-
-footer .footer-links a:last-child {
-    border-right: 0;
-}
-
-.footer-logo {
-    transition: all 0.2s ease;
-}
-
-.footer-logo:hover {
-    transform: scale(1.03);
-}
-
-footer .footer-links a:hover {
-    text-decoration: underline !important;
-    color: var(--var-blue) !important;
-}
-
 footer .bi-links i {
     color: #777;
 }
