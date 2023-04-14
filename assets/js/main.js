@@ -41,10 +41,13 @@ setTimeout(() => {
 //CLOSE NAVBAR ON CLICK
 const navLinks = document.querySelectorAll('.nav-item')
 const menuToggle = document.getElementById('navbarSupportedContent')
-const bsCollapse = new bootstrap.Collapse(menuToggle)
 navLinks.forEach((l) => {
-    l.addEventListener('click', () => { bsCollapse.toggle() })
+    l.addEventListener('click', () => { navToggle(); })
 })
+function navToggle() {
+    const bsCollapse = new bootstrap.Collapse(menuToggle)
+    bsCollapse.toggle();
+}
 
 
 //HEADER ACTIVE LINK OBSERVER
