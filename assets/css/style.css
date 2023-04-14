@@ -251,6 +251,7 @@ section.about-me-area {
 
 .project-area .card-img-top {
     transition: all 0.2s ease;
+    object-fit: cover;
 }
 
 .project-area .card-img-top:hover {
@@ -280,7 +281,7 @@ span[class*="seeMoreBtn"] {
     font-size: 0.9em;
 }
 
-span[class*="seeMoreBtn"]:hover {
+span[class*="seeMoreBtn"]:active {
     background-image: linear-gradient(to right, var(--var-blue), var(--var-purple));
     color: #fff;
 }

@@ -148,6 +148,8 @@ function openModal2(e) {
         modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Pizza-Delivery');
     } else if (pTarget.classList.contains('cssHover')) {
         modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/CSS-Hover-Effect');
+    } else if (pTarget.classList.contains('drSlider')) {
+        modal2.querySelector('.modal-link-r').setAttribute('href', 'https://github.com/vinicius-koga/Draggable-Slider');
     }
 }
 
