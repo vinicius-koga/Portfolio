@@ -37,6 +37,7 @@ setTimeout(() => {
     typeTextAnimation(insertText);
 }, 1200);
 
+console.log(window.innerWidth);
 
 //CLOSE NAVBAR ON CLICK
 const navLinks = document.querySelectorAll('.nav-item')
@@ -45,8 +46,10 @@ navLinks.forEach((l) => {
     l.addEventListener('click', () => { navToggle(); })
 })
 function navToggle() {
-    const bsCollapse = new bootstrap.Collapse(menuToggle)
-    bsCollapse.toggle();
+    if(window.innerWidth < 768) {
+        const bsCollapse = new bootstrap.Collapse(menuToggle)
+        bsCollapse.toggle();
+    }
 }
 
 
